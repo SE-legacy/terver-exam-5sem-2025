@@ -1,24 +1,24 @@
 #import "../conf.typ": *
 
 #definition([
-  *Оценка $limits(theta)^~$ параметра $theta$ называется не смещенной*, если
-  $ M limits(theta)^~ = theta $
+  *Оценка $limits(theta_n)^~$ параметра $theta$ называется не смещенной*, если
+  $ M limits(theta_n)^~ = theta $
 ])
 
 #definition([
-  *Оценка $limits(theta)^~$ параметра $theta$ называется состоятельной*, если
-  $limits(theta)^~ ->^p theta$, то есть
+  *Оценка $limits(theta_n)^~$ параметра $theta$ называется состоятельной*, если
+  $limits(theta_n)^~ ->^p theta$, то есть
 
   $
     forall epsilon > 0 space : space limits(lim)_(n -> infinity)
-      P { | limits(theta)^~ - theta | < epsilon } = 1
+      P { | limits(theta_n)^~ - theta | < epsilon } = 1
   $
 ])
 
 
 #definition([
-  *Оценка $limits(theta)^~$ параметра $theta$ называется эффективной*, если
-  $ D limits(theta)^~ = limits(i n f)_(limits(theta)^~)
+  *Оценка $limits(theta^*)^~$ параметра $theta$ называется эффективной*, если
+  $ D limits(theta^*)^~ = limits(i n f)_(limits(theta)^~)
       space D(limits(theta)^~) $
 
 ])
