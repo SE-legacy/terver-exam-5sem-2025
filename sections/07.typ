@@ -25,5 +25,38 @@
 
   ],
   [
+    Представим сл.в. $Z_n$ в виде
+
+    $ Z_n = (S_n - M S_n) / sqrt(D S_n) = ((xi_1 - a) + (xi_2 - a) + dots +
+      (xi_n - a)) / (sqrt(D xi_1 + D xi_2 + dots + D xi_n)) = \
+      = (xi_1 - a) / (sigma \/ sqrt(n)) + (xi_2 - a) / (sigma \/ sqrt(n)) + 
+      dots + (xi_n - a) / (sigma \/ sqrt(n)). $
+
+    Рассмотрим величину $xi_1 - a$ с $M (xi_1 - a) = 0$ и 
+    $D (xi_1 - a) = sigma^2$, и обозначим
+
+    $ phi_(xi_1 - a) (t) = phi (t) $
+
+    Тогда
+
+    $ phi_((xi_1 - 1) / (sigma \/ sqrt(n)))(t) = phi (t / (sigma \/ sqrt(n))) $
+
+    Воспользуемся представлением характеристической функции (х.ф.) в виде ряда:
+
+    $ phi (t / (sigma \/ sqrt(n))) = 1 + 
+      (i t) / 1! M (xi_1 - 1) / (sigma \/ sqrt(n)) +
+      (i t) / 2! M (xi_1 - 1)^2 / (sigma^2 \/ sqrt(n)) + o(t^2/(sigma^2 \/ n)) $
+
+    Получим:
+
+    $ phi_Z_n = (phi_((xi_1 - 1) / (sigma \/ sqrt(n)))(t))^n = 
+      (phi (t / (sigma \/ sqrt(n))))^n = \ 
+      = (1 - t^2 / (2 n) + o(t^2/(sigma^2 \/ n)) )^n ->_(n->infinity) 
+      e^(-t^2\/2) = phi_xi_0 (t), $
+
+    где $phi_xi_0 (t)$ --- х.ф. сл.в. $xi_0 ~ N(0, 1).$
+
+    Таким образом, получили $phi_n (t) -> phi_xi_0 (t)$, следовательно,
+    $F_Z_n (x) ->^w F_xi_0 (x).$
   ]
 )
