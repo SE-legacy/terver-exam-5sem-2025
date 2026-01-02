@@ -28,7 +28,7 @@ $ X_i tilde product(lambda) => 2lambda(X_1 + dots + X_n) tilde X^2(2n). $
 
 Тогда:
 
-$ & P{phi(x_n) gt.eq.slant C_phi | H_0 } \ & = P{limits(sum)_(i = 1)^n  X_i lt.eq.slant C | H_0 : \"lambda=lambda_0\" } \ & = P{2lambda_0 limits(sum)_(i = 1)^n X_i < 2lambda_0 C } \ & = alpha = F_chi^2_2n (q_alpha). $
+$ & P{phi(x_n) gt.eq.slant C_phi | H_0 } \ & = P{limits(sum)_(i = 1)^n  X_i lt.eq.slant C | H_0 : \"lambda=lambda_0\" } \ & = P{2lambda_0 limits(sum)_(i = 1)^n X_i < 2lambda_0 C } \ & = alpha = F_chi^2_(2n) (q_alpha). $
 
 Обозначая $2lambda_0C = q_alpha$, получим, что $C=q_alpha/(2lambda_0)$ и:
 
