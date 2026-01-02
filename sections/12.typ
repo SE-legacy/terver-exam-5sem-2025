@@ -3,7 +3,7 @@
 #definition([
   Эмпирическая (опытная, выборочная) функция распределения (ЭФР):
   $
-    limits(F_n)^~ (x) = sum_(i=1)^n e (x - X_i) #[либо] limits(F_n)^~ (x) = mu_n (x) / n
+    limits(F_n)^~ (x) = 1 / n sum_(i=1)^n e (x - X_i) #[либо] limits(F_n)^~ (x) = (mu_n (x)) / n
   $
   где $e(x) = 1$, при $x > 0$, $e(x) = 0$, при $x lt.eq 0$
 
