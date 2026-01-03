@@ -72,6 +72,12 @@
   content
 ) => block_base(name, breakline, content)
 
+#let example = (
+  name: "Пример",
+  breakline: false,
+  content
+) => block_base(name, breakline, content)
+
 #let consequence = (
   name: "Следствие",
   ending: "Доказано.",
