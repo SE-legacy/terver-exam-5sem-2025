@@ -2,7 +2,7 @@
 #let thetatilde = $limits(theta_n)^~$
 #definition([
   *Информация Фишера* в одном наблюдении --- это величина
-  $ I(theta) = M (partial ln f_xi (x, theta))^2 / (partial theta) $
+  $ I(theta) = M ((partial ln f_xi (x, theta)) / (partial theta))^2 $
 ])
 
 #definition([
