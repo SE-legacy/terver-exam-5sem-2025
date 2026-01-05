@@ -16,7 +16,7 @@
 
   Пусть $overline(x) = 1 / n limits(sum)^n_(i = 1) x_i$ --- оценка $lambda$.
   $
-    M overline(x) = lambda quad D overline(x) = D (1 / n limits(sum)_(i = 1)^n)
+    M overline(x) = lambda quad D overline(x) = D (1 / n limits(sum)_(i = 1)^n x_i)
       = 1 / n^2 limits(sum)^infinity_(i = 1) D x_i = 1 / n^2 dot n dot lambda
       = lambda / n
   $
@@ -24,7 +24,7 @@
   Найдем $I(lambda)$ --- в одном наблюдении
   $
     I(lambda) = M ( (partial ln (lambda e^(- lambda)) / (k!))
-                  / (partial lambda) )^lambda
+                  / (partial lambda) )^2
       = M(partial / (partial lambda) (xi ln lambda - lambda - ln xi!)^2) = \
       = M(xi / lambda - 1)^2
       = M(xi^2 / lambda - (2 xi) / lambda + 1)
@@ -35,5 +35,5 @@
   $
 
   Вычислим $e(overline(x)) = lambda / n dot n dot 1 / lambda = 1 => overline(x)$
-  --- эффективная оценка параметра $lambda$
+  --- оптимальная оценка параметра $lambda$
 ])
