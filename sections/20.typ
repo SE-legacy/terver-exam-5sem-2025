@@ -9,9 +9,9 @@
   $
     P{ xi = k } = (e^(- lambda) dot lambda^k) / (k!)
       => forall x_i P{ x_i = k } = P{ xi = k }\
-    M x_i = lambda
-      , space D x_i = lambda #[(из т.в.)]
-      , space M x_i^2 = lambda^2 + lambda
+    M x_1 = lambda
+      , space D x_1 = lambda #[(из т.в.)]
+      , space M x_1^2 = lambda^2 + lambda
   $
 
   Пусть $overline(x) = 1 / n limits(sum)^n_(i = 1) x_i$ --- оценка $lambda$.
