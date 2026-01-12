@@ -25,7 +25,7 @@
 
     Т.к. $t / n ->_(n->infinity) 0$ при любом вещественном $t$, то 
 
-    $ phi_(S_n / n) (t) = phi_xi_1 (t / n) = (1 + i t / n a + o(t / n))^n 
+    $ phi_(S_n / n) (t) = (phi_xi_1 (t / n))^n = (1 + i t / n a + o(t / n))^n 
       ->_(n->infinity)
       e^(i t a). $
     
