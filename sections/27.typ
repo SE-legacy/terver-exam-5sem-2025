@@ -22,42 +22,33 @@ $
 m p = overline(x) => limits(p_m)^~ = overline(x) / m 
 $
 
-== Применение ММ к построению оценок параметров $R(a, b)$
-Пусть по выборке
-$X_1, dots, X_10 ~ R(a, b)$,
-где 
-$overline(x) = 2.3$,
-$S^2 = 4.41$
-требуется оценить параметры $a, b$ равномерного распределения.
+== Применение ММ к построению оценок параметров $cal(N)(a, sigma^2)$
+$ f(x) = 1 / (sigma sqrt(2 pi)) e^(-(x - a)^2 / (2 sigma^2)) $
 
-$
-m_1 = M xi = (a + b) / 2 \
-limits(m_1)^~ = overline(x) \
-mu_2 = D xi = (b - a)^2 / 12 \
-limits(mu_2)^~ = 1 / n sum_(i = 1)^(n) (X_i - overline(x))^2 = S^2 
-$
+$ 
+m_1 = M xi, space accent(m_1, ~) = overline(x_B)\ 
+m_2 = M(xi - M xi)^2 = D xi, space overline(m_2) = overline(D_B)
+$ 
 
-Метод моментов:
+Получим:
 
 $
 cases(
-  m_k = limits(m_k)^~,
-  mu_k = limits(mu_k)^~
-)\
+  M xi = overline(x_B),
+  D xi = overline(D_B)
+) \
 
 cases(
-  (a + b) / 2 = 2.3,
-  (b - a)^2 / 12 = 4.41
-)\
+  M xi = a = overline(x_B),
+  D xi = sigma^2 = D_B
+)
+$
 
-cases(
-  b + a = 4.6,
-  b - a = 2.1 dot 2 sqrt(3)
-)\
+Находим оценки параметров:
 
-2b = 4.6 + 4.2 sqrt(3)\
+$
 cases(
-  limits(b)^~ = 2.3 + 2 sqrt(3),
-  limits(a)^~ = 2.3 - 2 sqrt(3)
+  a = overline(x_B) = 1 / n sum x_i n_i,
+  sigma = sqrt(D_B) = sqrt(1 / n sum (x_i - overline(x_B))^2 n_i)
 )
 $
