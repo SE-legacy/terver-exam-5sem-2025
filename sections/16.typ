@@ -46,7 +46,7 @@
   $
     | cov(thetaarrow overlxn, thetatilde overlxn) |
       = | M (theta - thetaarrow overlxn) (theta - thetatilde overlxn) | lt.eq\
-      lt.eq sqrt(M (theta - thetaarrow overlxn) (theta - thetatilde overlxn))
+      lt.eq sqrt(M (theta - thetaarrow overlxn)^2 M(theta - thetatilde overlxn)^2)
       = sqrt(D thetaarrow overlxn D thetatilde overlxn)
       = D thetaarrow overlxn
   $
