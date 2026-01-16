@@ -39,7 +39,7 @@
 
     Тогда
 
-    $ phi_((xi_1 - 1) / (sigma sqrt(n)))(t) = phi (t / (sigma sqrt(n))) $
+    $ phi_((xi_1 - a) / (sigma sqrt(n)))(t) = phi (t / (sigma sqrt(n))) $
 
     Воспользуемся представлением характеристической функции (х.ф.) в виде ряда:
 
@@ -49,7 +49,7 @@
 
     Получим:
 
-    $ phi_Z_n = (phi_((xi_1 - 1) / (sigma  sqrt(n)))(t))^n = 
+    $ phi_Z_n = (phi_((xi_1 - a) / (sigma  sqrt(n)))(t))^n = 
       (phi (t / (sigma  sqrt(n))))^n = \ 
       = (1 - t^2 / (2 n) + o(t^2/(sigma^2  n)) )^n ->_(n->infinity) 
       e^(-t^2\/2) = phi_xi_0 (t), $
