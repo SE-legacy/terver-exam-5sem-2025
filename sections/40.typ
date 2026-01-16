@@ -79,6 +79,29 @@ overline(x y) +
 accent(b, \^) overline(x)^2 - 
 accent(b, \^) S^2_x - 
 accent(b, \^) overline(x)^2 = 0
-
-
 $
+
+Отсюда получаем оценку параметра $b$:
+$
+accent(b, \^) = (overline(x y) - overline(x) dot overline(y)) / S^2_x = (overline(x y) - overline(x) dot overline(y)) / (S_x S_y) S_y / S_x = r S_y / S_x
+$
+
+Таким образом, решение системы уравнений имеет вид:
+$
+cases(
+  accent(b, \^) = r S_y / S_x,
+  accent(a, \^) = overline(y) - accent(b, \^) overline(x)
+)
+$
+
+Уравнение регрессии $Y$ на $X$ имеет вид:
+$
+overline(y)_x = overline(y) + r S_y / S_x (x - overline(x))
+$
+
+Уравнение регресиии $X$ на $Y$ имеет вид:
+$
+overline(x)_y = overline(x) + 1 / r S_x / S_y (y - overline(y))
+$
+
+Заметим, что каждое из уравнений имеет $overline(x)$ своим решением, т.е. графики проходят через точку $(overline(x), overline(y))$ --- центр совместного распределения величин $X$ и $Y$.
