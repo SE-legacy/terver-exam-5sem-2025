@@ -2,6 +2,9 @@
 
 #theorem(
   [
+    Из сходимости почти наверное вытекает сходимость по вероятности,
+
+    $ {xi_n} ->^(п.н.) xi => {xi_n} ->^p xi. $
 
     Из сходимости по вероятности вытекает сходимость по распределению,
 
@@ -12,7 +15,7 @@
     $ {xi_n} ->^(l.i.m) xi => {xi_n} ->^p xi. $
   ],
   [
-    + Пусть верно $forall epsilon > 0 space P { |xi_n - xi| >= epsilon } ->_(n -> oo) 0$ \
+    2. Пусть верно $forall epsilon > 0 space P { |xi_n - xi| >= epsilon } ->_(n -> oo) 0$ \
       Требуется доказать, что $F_n (x_0) -> F_xi (x_0), #[где] x_0 #[--- точка непрерывности] F_xi (x)$ \
       Пусть $x' < x_0 < x''$ \
       #image("images/5.png", height: 10%)
@@ -29,7 +32,7 @@
       Пусть $x' -> x_0, space x'' -> x_0$. \
       Тогда $limits(lim)_(n -> oo) F_n (x_0) = F(x_0)$
 
-    + Воспользуемся неравенством Чебышева:
+    3. Воспользуемся неравенством Чебышева:
 
       $ forall epsilon > 0 space P { |xi - M_xi| < epsilon } >= 1 - ((M (xi - M_xi)^2) / epsilon^2) $
       $ forall epsilon > 0 space P { |xi_n - xi| < epsilon } >= 1 - ((M (xi - M_xi)^2) / epsilon^2) >= 1 $
