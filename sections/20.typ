@@ -8,7 +8,7 @@
   оценку $lambda$
   $
     P{ xi = k } = (e^(- lambda) dot lambda^k) / (k!)
-      => forall x_i P{ x_i = k } = P{ xi = k }\
+      => forall x_i space P{ x_i = k } = P{ xi = k }\
     M x_1 = lambda
       , space D x_1 = lambda #[(из т.в.)]
       , space M x_1^2 = lambda^2 + lambda
