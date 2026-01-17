@@ -1,8 +1,8 @@
 #import "../conf.typ": *
 
 #example([
-  *(Показать, что $overline(x)$ является эффективной по Рао-Крамеру(Р-К) оценкой
-  параметра $a$ пауссоновского распределения $P o i s(lambda)$)*
+  *(Показать, что $overline(x)$ является эффективной по Рао-Крамеру (Р-К) оценкой
+  параметра $a$ Пуассоновского распределения $P o i s(lambda)$)*
 
   $(X_1, X_2, dots, X_n) ~ P o i s(lambda)$ Построить эффективную (оптимальную)
   оценку $lambda$
@@ -23,7 +23,7 @@
 
   Найдем $I(lambda)$ --- в одном наблюдении
   $
-    I(lambda) = M ( (partial ln (lambda e^(- lambda)) / (k!))
+    I(lambda) = M ( (partial ln (lambda^k e^(- lambda)) / (k!))
                   / (partial lambda) )^2
       = M(partial / (partial lambda) (xi ln lambda - lambda - ln xi!)^2) = \
       = M(xi / lambda - 1)^2
