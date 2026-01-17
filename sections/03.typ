@@ -22,12 +22,12 @@
         P {xi_n < x_0} + underbrace(P {|xi_n - xi| >= underbrace(x_0 - x', epsilon (x_0, x'))}, #[стремится к 0, так как] xi_n ->^P xi) <=
         #rect[$limits(underline(lim))_(n -> oo \ x' -> x_0) F_n (x_0)$] $
       #image("images/6.png", height: 10%)
-      $ #rect[$F_n (x_0)$] = P {xi_n < x_0} = P {(xi_n < x_0 inter xi < x'' union xi >= x'')} = \
-        = P {(xi_n < x_0 inter xi < x'')} + P {(xi_n < x_0) inter (xi > x'')} <= \
+      $ #rect[$F_n (x_0)$] = P {xi_n < x_0} = P {xi_n < x_0 inter (xi < x'' union xi >= x'')} = \
+        = P {(xi_n < x_0 inter xi < x'')} + P {(xi_n < x_0) inter (xi >= x'')} <= \
         <= P {xi < x''} <= #rect[$F_xi (x'')$] $
       $ F_xi (x') <= limits(underline(lim))_(n -> oo) F_n (x_0) <= limits(overline(lim))_(n -> oo) F_n (x_0) <= F_xi (x'') $
       Пусть $x' -> x_0, space x'' -> x_0$. \
-      Так как точка $x_0$, то $limits(lim)_(n -> oo) F_n (x_0) = F(x_0)$
+      Тогда $limits(lim)_(n -> oo) F_n (x_0) = F(x_0)$
 
     + Воспользуемся неравенством Чебышева:
 
