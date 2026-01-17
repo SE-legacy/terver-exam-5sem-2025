@@ -20,6 +20,6 @@
     $ (partial ln f(x, theta)) / (partial theta) > 0 space (< + infinity)
       space forall theta in Theta, space x in A$.
   + $ M((partial ln f(x, theta)) / (partial theta)) = 0
-    , M((partial ln f(x, theta)) / (partial theta))^2 = + infinity$.
+    , M((partial ln f(x, theta)) / (partial theta))^2 < + infinity$.
   + Возможно дифференцирование по параметру $theta$ под знаком интеграла дважды.
 ])

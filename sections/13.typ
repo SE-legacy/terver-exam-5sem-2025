@@ -16,15 +16,14 @@
 + #theorem([
     *(Гливенко)*
     $ limits(F_n)^~ (x) ->^p F_xi (x) $
-  ],[
-    _Доказательство._ Действительно по неравенству Чебышёва
-    $
-      forall epsilon > 0 space P{|limits(F_n)^~ (x) - F_xi (x)| < epsilon}
-      >= 1 - (overbrace(F_xi (x), in [0, 1]) overbrace((1 - F_xi (x)),
-      in [0, 1])) / (n epsilon^2) ->_(n -> infinity) 1
-    $
+  ], [])
+    // _Доказательство._ Действительно по неравенству Чебышёва
+    // $
+    //   forall epsilon > 0 space P{|limits(F_n)^~ (x) - F_xi (x)| < epsilon}
+    //   >= 1 - (overbrace(F_xi (x), in [0, 1]) overbrace((1 - F_xi (x)),
+    //   in [0, 1])) / (n epsilon^2) ->_(n -> infinity) 1
+    // $
 
-    так как любая вероятность $<= 1$, то $exists limits(lim)_(n -> infinity)
-    P {|limits(F_n)^~ (x) - F_xi (x)| < epsilon} = 1 =>
-    limits(F_n)^~ (x) ->^p F_xi (x)$
-  ])
+    // так как любая вероятность $<= 1$, то $exists limits(lim)_(n -> infinity)
+    // P {|limits(F_n)^~ (x) - F_xi (x)| < epsilon} = 1 =>
+    // limits(F_n)^~ (x) ->^p F_xi (x)$
