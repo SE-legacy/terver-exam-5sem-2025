@@ -2,9 +2,6 @@
 
 #theorem(
   [
-    Из сходимости почти наверное вытекает сходимость по вероятности,
-
-    $ {xi_n} ->^(п.н.) xi => {xi_n} ->^p xi. $
 
     Из сходимости по вероятности вытекает сходимость по распределению,
 
@@ -15,14 +12,12 @@
     $ {xi_n} ->^(l.i.m) xi => {xi_n} ->^p xi. $
   ],
   [
-    + TODO
-
     + Пусть верно $forall epsilon > 0 space P { |xi_n - xi| >= epsilon } ->_(n -> oo) 0$ \
       Требуется доказать, что $F_n (x_0) -> F_xi (x_0), #[где] x_0 #[--- точка непрерывности] F_xi (x)$ \
       Пусть $x' < x_0 < x''$ \
       #image("images/5.png", height: 10%)
       Рассмотрим $F_xi (x')$:
-      $ #rect[$F_xi (x')$] = P {xi < x'} = P {(x_(n/2) < x' inter (xi_n < x_0 union xi_n >= x_0))} = \
+      $ #rect[$F_xi (x')$] = P {xi < x'} = P {(xi < x' inter (xi_n < x_0 union xi_n >= x_0))} = \
         P {((xi < x') inter (xi_n < x_0)) union (xi < x' inter xi_n >= x_0)} <= \
         P {xi_n < x_0} + underbrace(P {|xi_n - xi| >= underbrace(x_0 - x', epsilon (x_0, x'))}, #[стремится к 0, так как] xi_n ->^P xi) <=
         #rect[$limits(underline(lim))_(n -> oo \ x' -> x_0) F_n (x_0)$] $
