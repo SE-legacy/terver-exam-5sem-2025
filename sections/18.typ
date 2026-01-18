@@ -3,7 +3,8 @@
   *(Неравенство Рао-Крамера)*.
 
   Пусть $(X_1, dots, X_n)$ --- выборка из распределения случайной величины $xi$
-  и ${ X_n, space F_xi (x, theta), space theta in Theta }$ --- регулярна и $limits(theta)^~$ ($overline(X)_n$) несмещенная оценка параметра $theta$.
+  и ${ X_n, space F_xi (x, theta), space theta in Theta }$ --- регулярна и
+  $limits(theta)^~$ ($overline(X)_n$) несмещенная оценка параметра $theta$.
 
   Тогда
   $
@@ -11,6 +12,6 @@
   $
   где
   $
-    I(theta) = M ((partial ln f(x, theta)) / (partial theta))^2
+    I(theta) = M ((partial ln F_xi (x, theta)) / (partial theta))^2
   $
 ],[])
