@@ -15,7 +15,7 @@
       P{c - epsilon < xi_n < c + epsilon} >= 
       P{c - epsilon < xi_n < c + epsilon / 2} = \
       F_(xi_n) (c + epsilon / 2) -
-      F_(xi_n)(c - epsilon) ->^d F_epsilon (c + epsilon / 2) - F_epsilon (c - epsilon) = 1 - 0 = 1 $
+      F_(xi_n)(c - epsilon) ->^d F_xi (c + epsilon / 2) - F_xi (c - epsilon) = 1 - 0 = 1 $
 
     Получим $forall epsilon > 0 quad P {|xi_n - c| < epsilon} >= 1$, 
     
