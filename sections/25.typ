@@ -88,6 +88,6 @@ $L(x, theta)$.
 
 + Составить функцию правдоподобия $L(x, theta)$;
 + Взять натуральный логарифм $ln L(x, theta)$;
-+ Найти производную $(diff ln L(x, theta)) / (diff theta)$ и решение уравнения $(diff ln L(x, theta)) / (diff theta) = 0$;
++ Найти производную $(partial ln L(x, theta)) / (partial theta)$ и решение уравнения $(partial ln L(x, theta)) / (partial theta) = 0$;
 + Доказать, что решение уравнения является точкой максимума
-$ (diff^2 ln L(x, theta)) / (diff theta^2) = 0 $
+$ (partial^2 ln L(x, theta)) / (partial theta^2) = 0 $
