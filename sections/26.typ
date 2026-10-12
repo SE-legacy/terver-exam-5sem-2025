@@ -21,9 +21,9 @@
 
     $
       cases(
-        (diff ln L(overline(X)_n, a, sigma)) / (diff a) = 1 / sigma^2 
+        (partial ln L(overline(X)_n, a, sigma)) / (partial a) = 1 / sigma^2 
         sum_(i=1)^n (X_i - a) = 0\, ,
-        (diff ln L(overline(X)_n, a, sigma)) / (diff sigma) = - n / sigma +
+        (partial ln L(overline(X)_n, a, sigma)) / (partial sigma) = - n / sigma +
         1 / sigma^3 sum_(i=1)^n (X_i - a)^2 = 0.
       )
     $
@@ -47,12 +47,12 @@
 
     $
       cases(
-        (diff^2 ln L(overline(X)_n, a, sigma)) / (diff a^2) = - n / sigma^2 
+        (partial^2 ln L(overline(X)_n, a, sigma)) / (partial a^2) = - n / sigma^2 
         |_(sigma^2 = S^2) = - n / S^2 < 0 \, ,
-        (diff^2 ln L(overline(X)_n, a, sigma)) / (diff sigma^2) = n / sigma^2 -
+        (partial^2 ln L(overline(X)_n, a, sigma)) / (partial sigma^2) = n / sigma^2 -
         3 1 / sigma^4 sum_(i=1)^n (X_i - a)^2 |_(a = overline(x), sigma^2 = S^2)
         = - 2 n / S^2 < 0 \,,
-        (diff^2 ln L(overline(X)_n, a, sigma)) / (diff sigma diff a) = - 2 / 
+        (partial^2 ln L(overline(X)_n, a, sigma)) / (partial sigma partial a) = - 2 / 
         sigma^3 sum_(i=1)^n (X_i - a) |_(a=overline(x), sigma^2 = S^2) = 
         - 2 / sigma^3 (n overline(x) - n overline(x)) = 0. 
       )
